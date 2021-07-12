@@ -1,23 +1,23 @@
 #sound download link: https://www.soundjay.com/beep-sounds-1.html
 
 ###global variables
-##x = 1
-##print(x)#x is already global because it is defined outside of functions
-##
-##def func():
-##    x = 1
-##func()
-##print(x) #causes error because x is only defined within the scopt of func()
-##
-##def func():
-##    global x
-##    x = 1
-##func()
-##print (x)
-##
-##def func2():
-##    print(x)
-##func2()
+x = 1
+print(x)#x is already global because it is defined outside of functions
+
+def func():
+   x = 1
+func()
+print(x) #causes error because x is only defined within the scopt of func()
+
+def func():
+   global x
+   x = 1
+func()
+print (x)
+
+def func2():
+   print(x)
+func2()
 
 #pygame examples
 
@@ -39,7 +39,7 @@ while go:
     fontRect.topleft = (100, 100)
     screen.blit(font_render,fontRect)
 
-    #sounds
+    #sounds - doesn't work in REPL.it
     beep = pygame.mixer.Sound('sound96.wav')
     beep.play()
     t.sleep(2)
