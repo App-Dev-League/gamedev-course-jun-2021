@@ -1,0 +1,9 @@
+apple
+apples
+banana
+bananas
+pizza 
+grapes
+salad
+cheese
+ravioli
